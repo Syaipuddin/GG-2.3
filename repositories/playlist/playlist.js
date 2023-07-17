@@ -59,5 +59,5 @@ export const addNewPlaylistRepo = (name) => {
         throw new Error(`Error saat menambah Playlist = ${err.message}`);
 
     }
-    
+
 }

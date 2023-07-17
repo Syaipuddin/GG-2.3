@@ -13,13 +13,11 @@ export const getUserByIDUsecase = (userId) => {
 
 export const addNewUserUsecase = (username) => {
 
-    const newUser = addNewUserRepo(username);
-
-    if(!newUser) {
-        return null;
+    if(!username) {
+        throw new Error("Username Tidak Valid!");
     }
 
-    return newUser;
+    return addNewUserRepo(username);
 }
 
 export const getAllUserUsecase = () => {

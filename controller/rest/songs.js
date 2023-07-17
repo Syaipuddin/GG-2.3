@@ -28,11 +28,11 @@ export const getSongs = (req, res) => {
             return res.status(404).json({message : "Empty Song List"});
         }
 
-        res.status(200).json({result: song});
+        res.status(200).json({song});
 
     } catch(err) {
 
         res.status(500).json({error : err});
-        
+
     }
 }

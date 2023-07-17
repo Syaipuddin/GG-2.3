@@ -25,10 +25,6 @@ export const addNewUser = (req, res) => {
     try {
         const newUser = addNewUserUsecase(username);
 
-        if(!newUser) {
-            return res.status(500).send({message : "Gagal membuat User!"});
-        }
-
         res.status(201).send({user : newUser});
         
     } catch(err) {

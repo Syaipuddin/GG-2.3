@@ -13,15 +13,21 @@ export const getUserByIDRepo = (id) => {
 
 export const addNewUserRepo = ( username ) => {
 
-    const newUser = {
-        userId : users.length + 1,
-        username : username,
-        playlists : [],
+    try {
+        const newUser = {
+            userId : users.length + 1,
+            username : username,
+            playlists : [],
+        }
+    
+        users.push(newUser);
+    
+        return newUser;
+
+    } catch(err) {
+
+        throw new Error('Terjadi Kesalahan ketika Tambah User!');
     }
-
-    users.push(newUser);
-
-    return newUser;
 }
 
 export const getAllUserRepo = () => {

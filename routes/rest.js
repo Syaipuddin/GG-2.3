@@ -11,7 +11,7 @@ const router = express.Router();
 router.get('/user/playlist/:userId', getUsersPlaylist);
 router.get('/playlist/:playlistId', getPlayListById);
 
-router.post('/playlist/:songId/:playlistId', addNewSongToPlaylist);
+router.post('/playlist/:playlistId/:songId', addNewSongToPlaylist);
 router.post('/user/:userId/playlist/:playlistId', addNewUsersPlaylist);
 router.post('/playlist', addNewPlaylist);
 

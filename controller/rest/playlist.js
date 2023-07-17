@@ -70,7 +70,7 @@ export const addNewUsersPlaylist = (req, res) => {
         const playlist = getPlaylistByIDRepo(playlistId)
         const result = addNewUserPlaylistUsecase(user, playlist);
     
-        res.status(201).json({message: "Berhasil menambahkan playlist ke user", playlistId : result});
+        res.status(201).json({message: "Berhasil menambahkan playlist ke user"});
 
     } catch (err) {
 
