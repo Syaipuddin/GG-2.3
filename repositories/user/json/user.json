@@ -1,0 +1,14 @@
+[
+    {
+        "userId": 1,
+        "username" : "Udeans",
+        "playlists" : [{"id" : 1}, {"id" : 2}],
+        "counter" : []
+    },
+    {
+        "userId" : 2,
+        "username" : "Grizz",
+        "playlists" : [{"id" : 3}],
+        "counter" : [{"songId" : 1, "played" : 2}, {"songId" : 3, "played" : 5}]
+    }
+]
