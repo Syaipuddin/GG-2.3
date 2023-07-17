@@ -39,3 +39,25 @@ export const getUsersPlaylistRepo = (userpl) => {
 
     return newPlaylists;
 }
+
+export const addNewPlaylistRepo = (name) => {
+
+    try {
+
+        const newPl = {
+            name : name,
+            playlistId : playlists.length + 1,
+            list : []
+        }
+
+        playlists.push(newPl);
+        return newPl;
+
+    }
+    catch(err) {
+
+        throw new Error(`Error saat menambah Playlist = ${err.message}`);
+
+    }
+    
+}

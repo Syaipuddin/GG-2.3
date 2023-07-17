@@ -1,4 +1,4 @@
-import { getUsersPlaylistRepo, getPlaylistByIDRepo,  addNewSongToPlaylistRepo} from "../repositories/playlist/playlist.js";
+import { getUsersPlaylistRepo, getPlaylistByIDRepo,  addNewSongToPlaylistRepo, addNewPlaylistRepo} from "../repositories/playlist/playlist.js";
 import { getSongByIDRepo } from "../repositories/songs/songs.js";
 import { getUserByIDRepo } from "../repositories/user/user.js";
 
@@ -61,4 +61,16 @@ export const addNewUserPlaylistUsecase = (user, pl) => {
     }
 
     throw new Error('Playlist telah ada')
+}
+
+export const addNewPlaylistUsecase = (name) => {
+
+    if(!name) {
+
+        throw new Error("Mohon masukkan Name yang sesuai");
+
+    }
+
+    return addNewPlaylistRepo(name);
+
 }

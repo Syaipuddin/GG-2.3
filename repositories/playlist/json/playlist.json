@@ -1,13 +1,16 @@
 [
     {
+        "name" : "Galau",
         "playlistId" : 1,
         "list" : [{"songId" : 5}, {"songId" : 6}]
     },
     {
+        "name" : "Jogging",
         "playlistId" : 2,
         "list" : [{"songId" : 1, "played" : 1}, {"songId" : 3, "played" : 3}]
     },
     {
+        "name" : "Goyang asek",
         "playlistId" : 3,
         "list" : [{"songId" : 2}, {"songId" : 4}]
     }

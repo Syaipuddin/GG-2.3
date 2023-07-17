@@ -1,5 +1,5 @@
 import express from 'express';
-import { getPlayListById, getUsersPlaylist, addNewSongToPlaylist, addNewUsersPlaylist } from '../controller/rest/playlist.js';
+import { getPlayListById, getUsersPlaylist, addNewSongToPlaylist, addNewUsersPlaylist, addNewPlaylist } from '../controller/rest/playlist.js';
 import { getSongs, addNewSong } from '../controller/rest/songs.js';
 import { playSong  } from '../controller/rest/play.js';
 import { getUser, addNewUser , getAllUser} from '../controller/rest/user.js';
@@ -13,6 +13,7 @@ router.get('/playlist/:playlistId', getPlayListById);
 
 router.post('/playlist/:songId/:playlistId', addNewSongToPlaylist);
 router.post('/user/:userId/playlist/:playlistId', addNewUsersPlaylist);
+router.post('/playlist', addNewPlaylist);
 
 // SONG
 router.get('/songs', getSongs);
