@@ -33,7 +33,7 @@ export const addNewSongToPlaylist = (req, res)=>{
             return res.status(500).json({ message : "Error adding song to playlist"});
         }
 
-        res.status(201).json({message : result});
+        res.status(201).json({message : "Berhasil Menambahkan Lagu"});
 
     } catch (err) {
 
