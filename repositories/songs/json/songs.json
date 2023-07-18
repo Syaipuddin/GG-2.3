@@ -3,41 +3,41 @@
        "songId" : 1,
        "title": "Perfect",
        "artists": [{"name" : "Ed Sheeran"}],
-       "url" : ""
+       "url" : "https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v"
     },
     {
         "songId" : 2,
         "title" : "Dive",
         "artists" : [{"name" : "Ed Sheeran"}],
-        "url" : "",
+        "url" : "https://open.spotify.com/track/51ChrwmUPDJvedPQnIU8Ls",
         "played" : 2
     },
     {
         "songId" : 3,
         "title" : "Villain",
         "artists" : [{"name" : "K/DA"}, {"name" : "Madison Beer"}, {"name" : "(G)-IDLE"}],
-        "url" : "",
+        "url" : "https://open.spotify.com/track/26IdRjba8f8DNa7c0FwfQb",
         "played" : 3
     },
     {
         "songId" : 4,
         "title" : "POP/STAR",
         "artists" : [{"name" : "K/DA"}, {"name" : "Madison Beer"}, {"name" : "(G)-IDLE"}],
-        "url" : "",
+        "url" : "https://open.spotify.com/album/0UnBZ8laFgLUq5Ty5vbikQ",
         "played" :2
     },
     {
         "songId" : 5,
         "title" : "MORE",
         "artists" : [{"name" : "K/DA"}, {"name" : "Madison Beer"}, {"name" : "(G)-IDLE"}],
-        "url" : "",
+        "url" : "https://open.spotify.com/track/6ZlvEI2HQC6R5TahN9Ffm4",
         "played" : 3
     },
     {
         "songId" : 6,
         "title" : "DRUM GO DUM",
         "artists" : [{"name" : "K/DA"}, {"name" : "Madison Beer"}, {"name" : "(G)-IDLE"}],
-        "url" : "",
+        "url" : "https://open.spotify.com/track/2JV5OBqTMW1F6PYOGZJatP",
         "played" : 5
     }
 ]
