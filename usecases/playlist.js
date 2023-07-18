@@ -6,10 +6,13 @@ import { getUserByIDRepo } from "../repositories/user/user.js";
 export const getPlaylistByIDUsecase = (id) => {
 
     const playlist = getPlaylistByIDRepo(id);
-    const list = [];
+    const songList = [];
 
     const songIds = playlist.list;
-    songIds.map((e) => list.push(getSongByIDRepo(e.songId)));
+    songIds.map((e) => songList.push(getSongByIDRepo(e.songId)));
+    
+    // SORT THE SONGS
+    const list = songList.sort((a, b) => b.played - a.played)
 
     if(!playlist) {
         return null;
@@ -31,6 +34,23 @@ export const getUsersPlaylistUsecase = (userId) => {
     const user = getUserByIDRepo(userId);
 
     const playlists = getUsersPlaylistRepo(user?.playlists);
+
+    playlists.map((e) => { 
+        // COUNT THE LIST LENGTH FOR DELETEING PURPOSE
+        const eLength = e.list.length;
+
+        e.list.map((f) => { 
+            
+            e.list.push(getSongByIDRepo(f.songId));
+
+                }
+
+            );
+        // DELETE THE RESIDUE BASED ON THE STORED LENGTH
+        e.list.splice(0, eLength);
+
+        }
+    );
 
 
     if(!playlists) {

@@ -6,21 +6,23 @@ export const getSongsRepo = () => {
         throw new Error('Lagu Tidak ada');
     }
 
-    return songs
+    const sortedSong = songs.sort((a, b) => b.played - a.played);
+
+    return sortedSong;
 }
 
 export const addNewSongRepo = (title, artists, url) => {
     
-    let newSong = {
-        id: songs.length + 1,
-        title : title,
-        artists : artists,
-        url: url
-    }
-
-    songs.push(newSong);
-
-    return songs;
+        let newSong = {
+            songId: songs.length + 1,
+            title : title,
+            artists : artists,
+            url: url
+        }
+    
+        songs.push(newSong);
+    
+        return newSong;
 }
 
 export const getSongByIDRepo = (id) => {
